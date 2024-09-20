@@ -59,7 +59,7 @@ add_subdirectory(yaml-cpp)
 target_include_directories(
   ${PROJECT_NAME}
   PRIVATE glfw/include
-          glad/include
+          ${CMAKE_CURRENT_BINARY_DIR}/glad/include
           freetype/include
           glm
           libpng
